@@ -99,7 +99,8 @@ module Paperclip
 
     def format_geometry geometry
       return unless geometry.present?
-      return geometry.gsub(/[#!<>)]/, '')
+      return geometry
+      #.gsub(/[#!<>)]/, '')
     end
 
     def output_is_image?
